@@ -325,7 +325,7 @@ void angle_test(string mode = "test"){
             }
 
             cv::Mat smoothed = gray;
-            cv::Canny(smoothed, edge_global, 30, 60);
+            cv::Canny(smoothed, edge_global, 100, 200);
 
             if(edge_global.channels() == 1) cvtColor(edge_global, edge_global, CV_GRAY2BGR);
         }
